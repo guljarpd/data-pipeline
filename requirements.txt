@@ -4,4 +4,5 @@ pydantic
 sqlalchemy
 databases
 asyncpg
+gunicorn
 
