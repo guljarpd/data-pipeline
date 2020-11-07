@@ -1,0 +1,15 @@
+README.md
+setup.py
+app/__init__.py
+app/main.py
+app/api/__init__.py
+app/api/routes/__init__.py
+app/api/routes/apis.py
+app/api/routes/read_file.py
+app/models/__init__.py
+app/models/db.py
+app/models/tickers.py
+curl_data_pipeline.egg-info/PKG-INFO
+curl_data_pipeline.egg-info/SOURCES.txt
+curl_data_pipeline.egg-info/dependency_links.txt
+curl_data_pipeline.egg-info/top_level.txt
