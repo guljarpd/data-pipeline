@@ -50,7 +50,7 @@ async def read_and_save():
     # print(values)
     # 
     query = tickers.insert()
-    print(query, values)
+    # print(query, values)
     await database.execute_many(query=query, values=values)
   except Exception as e:
     print(e)
