@@ -5,4 +5,5 @@ sqlalchemy
 databases
 asyncpg
 gunicorn
+psycopg2
 

@@ -35,21 +35,26 @@ def make_json(params):
   }
 
 async def read_and_save():
-  # pass
-  values = []
-  # 
-  with open("./app/data/tickers.json", "r", encoding="utf-8") as fp:
-    json_data = json.load(fp)
-    # print(json_data)
-    for item in json_data:
-      # print(json_data[item].get("symbol"))
-      params = make_json(json_data[item])
-      values.append(params)
-      # print(params)
-  # print(values)
-  # 
-  # query = tickers.insert()
-  # print(query, values)
-  # await database.execute_many(query=query, values=values)
+  try:
+    # pass
+    values = []
+    # 
+    with open("./app/data/tickers.json", "r", encoding="utf-8") as fp:
+      json_data = json.load(fp)
+      # print(json_data)
+      for item in json_data:
+        # print(json_data[item].get("symbol"))
+        params = make_json(json_data[item])
+        values.append(params)
+        # print(params)
+    # print(values)
+    # 
+    query = tickers.insert()
+    print(query, values)
+    await database.execute_many(query=query, values=values)
+  except Exception as e:
+    print(e)
+    pass
+  
     
     
